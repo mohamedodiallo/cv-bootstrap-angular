@@ -19,16 +19,18 @@
 	<div class="container">
 		
 		<!-- Header devient une row -->
-		<header class="row">
-			<!-- Chaque enfant direct devient une colonne de 12 (mobile-first) -->
-			<div class="col-12">
+		<header class="row align-items-center">
+			<!-- Nom/Prénom : largeur auto sur écrans moyens et grands -->
+			<div class="col-12 col-md col-lg-auto">
 				<span>Absa</span>
 				<span>NDIAYE</span>
 			</div>
-			<div class="col-12">
-				<img src="cv.png" alt="photo">
+			<!-- Photo : largeur auto sur écrans moyens, 3 colonnes sur grands écrans, en dernier -->
+			<div class="col-12 col-md-auto col-lg-3 order-lg-last">
+				<img src="cv.png" alt="photo" class="img-fluid">
 			</div>
-			<section class="col-12">
+			<!-- Section à propos : prend l'espace restant -->
+			<section class="col-12 col-md-12 col-lg">
 				<h1>A propos de nous</h1>
 				<p>
 					Decrivez en quelques lignes vos compétences clés pour le poste et vos objectifs de carrière. Vous
@@ -41,34 +43,38 @@
 		
 		<!-- Main devient une row -->
 		<main class="row">
-			<!-- Chaque enfant direct devient une colonne de 12 (mobile-first) -->
-			<div id="darkSection" class="col-12 darkZone">
-				<section>
-					<h1>Contact</h1>
-					<p>77 100 20 30 / 76 100 20 30</p>
-					<p>absa@emploidakar.com </p>
-					<p>Rue Kaolack, Point E, Dakar</p>
-				</section>
-				<section>
-					<h1>Compétence</h1>
-					<ul>
-						<li>Bonne élocution</li>
-						<li>Rythme verbal, ton</li>
-						<li>Maitrise des outils de bureautique</li>
-						<li>Respect du timing</li>
-					</ul>
-				</section>
-				<section>
-					<h1>Langues</h1>
-					<ul>
-						<li>Français</li>
-						<li>Anglais</li>
-						<li>Pulaar</li>
-					</ul>
-				</section>
+			<!-- Section sombre : 12 colonnes par défaut, 3 colonnes sur grands écrans, en dernier -->
+			<div id="darkSection" class="col-12 col-md-12 col-lg-3 darkZone order-lg-last">
+				<!-- Créer une row pour les écrans moyens -->
+				<div class="row">
+					<section class="col-12 col-md col-lg-12">
+						<h1>Contact</h1>
+						<p>77 100 20 30 / 76 100 20 30</p>
+						<p>absa@emploidakar.com </p>
+						<p>Rue Kaolack, Point E, Dakar</p>
+					</section>
+					<section class="col-12 col-md col-lg-12">
+						<h1>Compétence</h1>
+						<ul>
+							<li>Bonne élocution</li>
+							<li>Rythme verbal, ton</li>
+							<li>Maitrise des outils de bureautique</li>
+							<li>Respect du timing</li>
+						</ul>
+					</section>
+					<section class="col-12 col-md col-lg-12">
+						<h1>Langues</h1>
+						<ul>
+							<li>Français</li>
+							<li>Anglais</li>
+							<li>Pulaar</li>
+						</ul>
+					</section>
+				</div>
 			</div>
 
-			<div id="lightSection" class="col-12">
+			<!-- Section claire : 12 colonnes par défaut, 9 colonnes sur grands écrans -->
+			<div id="lightSection" class="col-12 col-md-12 col-lg-9">
 				<section>
 					<h1>Experiences</h1>
 					<section>
