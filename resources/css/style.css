@@ -1,0 +1,48 @@
+/* Question 7 : Intégration de la police Sensation */
+@font-face {
+    font-family: 'Sensation';
+    src: url('../fonts/SENSATION.otf') format('opentype');
+}
+
+/* Appliquer Sensation aux span dans header */
+header span {
+    font-family: 'Sensation', sans-serif;
+    font-size: 38px;
+}
+
+/* Partie 2 - Question 2 : Choix des couleurs */
+
+/* Classe lightZone : fond clair, texte sombre */
+.lightZone {
+    background-color: #DCE4F2;
+    color: #0A2C59;
+}
+
+/* Classe darkZone : fond sombre, texte clair */
+.darkZone {
+    background-color: #0A2C59;
+    color: #DCE4F2;
+}
+
+/* Question 4 : H1 dans lightZone */
+.lightZone h1 {
+    border-bottom: 2px solid #0A2C59;
+    font-size: 38px;
+}
+
+/* Question 5 : H1 dans darkZone */
+.darkZone h1 {
+    border-bottom: 2px solid #DCE4F2;
+    font-size: 38px;
+}
+
+/* Question 6 : H1 dans sous-section de lightZone */
+.lightZone section section h1 {
+    border-bottom: none;
+    font-size: 20px;
+}
+
+/* Question 8 : Ajouter bordure au container */
+.container {
+    border: 2px solid #0A2C59;
+}
