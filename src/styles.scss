@@ -1,0 +1,23 @@
+/* Personnalisation des couleurs Bootstrap avec CSS variables */
+:root {
+    --bs-primary: #0A2C59;
+    --bs-primary-rgb: 10, 44, 89;
+    --bs-secondary: #DCE4F2;
+    --bs-secondary-rgb: 220, 228, 242;
+}
+
+.bg-primary {
+    background-color: #0A2C59 !important;
+}
+
+.text-primary {
+    color: #0A2C59 !important;
+}
+
+.bg-secondary {
+    background-color: #DCE4F2 !important;
+}
+
+.text-secondary {
+    color: #DCE4F2 !important;
+}

@@ -10,8 +10,6 @@ header span {
     font-size: 38px;
 }
 
-/* Partie 2 - Question 2 : Choix des couleurs */
-
 /* Classe lightZone : fond clair, texte sombre */
 .lightZone {
     background-color: #DCE4F2;
@@ -24,25 +22,25 @@ header span {
     color: #DCE4F2;
 }
 
-/* Question 4 : H1 dans lightZone */
-.lightZone h1 {
+/* H1 dans lightZone */
+.lightZone h1, .bg-secondary h1 {
     border-bottom: 2px solid #0A2C59;
     font-size: 38px;
 }
 
-/* Question 5 : H1 dans darkZone */
-.darkZone h1 {
+/* H1 dans darkZone */
+.darkZone h1, .bg-primary h1 {
     border-bottom: 2px solid #DCE4F2;
     font-size: 38px;
 }
 
-/* Question 6 : H1 dans sous-section de lightZone */
-.lightZone section section h1 {
+/* H1 dans sous-section de lightZone */
+.lightZone section section h1, .bg-secondary section section h1 {
     border-bottom: none;
     font-size: 20px;
 }
 
-/* Question 8 : Ajouter bordure au container */
+/* Ajouter bordure au container */
 .container {
     border: 2px solid #0A2C59;
 }
